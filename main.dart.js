@@ -9234,8 +9234,8 @@ NG:function NG(a){this.a=a},
 aaz:function aaz(){},
 aay:function aay(a,b){this.a=a
 this.b=b},
-aax:function aax(a){this.a=a},
 aaw:function aaw(){},
+aax:function aax(a){this.a=a},
 aav:function aav(a){this.a=a},
 aas:function aas(a,b,c){this.a=a
 this.b=b
@@ -47817,7 +47817,7 @@ else B.b.J(r,A.b([B.EH],s))
 r.push(this.pM("Away",b,20))
 return A.hz(r,B.M,B.a1,B.X,null)},
 ahM(a,b){return this.S5(a,b,!0)},
-O5(a){return new A.bx(B.Ev,A.aza(a,new A.aav(50),50,50),null)},
+O5(a,b){return new A.bx(B.Ev,A.aza(a,new A.aav(50),50,50),null)},
 O6(a,b,c){var s,r=null,q=A.bD(c,r,t.w).w.a.a
 if(q<400)s=18
 else if(q<500)s=20
@@ -47848,23 +47848,32 @@ s.D(0,new A.nQ())
 return s},
 $S:435}
 A.aay.prototype={
-$2(a,b){var s,r,q,p,o,n,m,l,k=this
+$2(a,b){var s,r,q,p,o,n,m,l,k,j=this
 if(b instanceof A.B1||b instanceof A.B3)return B.i9
 else if(b instanceof A.B2){s=b.a_f()
 r=b.a_7()
-q=b.a_g()
-p=t.p
-o=A.b([],p)
-if(s.length!==0){n=k.a
-m=k.b
-l=A.Y(r).h("aR<1>")
-B.b.J(o,A.b([n.pM("GAME DAY",a,35),A.eP(A.b([n.S5("",a,!1),n.Ez(s,m)],p),B.M,B.a1,B.X),n.xN(m),n.G8("Yesterday's Result",a),n.EA(A.ao(new A.aR(r,new A.aaw(),l),!0,l.h("n.E")),m,a),n.xN(m)],p))}else if(r.length!==0){n=k.a
-m=k.b
-B.b.J(o,A.b([n.G8("Latest Gameweek Recap",a),n.EA(r,m,a),n.xN(m)],p))}o.push(B.NR)
-if(q.length!==0){n=k.a
-m=k.b
-B.b.J(o,A.b([n.G8("Upcoming Games",a),n.EA(q,m,a),n.xN(m)],p))}return A.aFG(A.aEP(A.b([A.eP(o,B.M,B.a1,B.X)],p),null),new A.aax(a))}else return B.Td},
+q=A.Y(r).h("aR<1>")
+p=A.ao(new A.aR(r,new A.aaw(),q),!0,q.h("n.E"))
+o=b.a_g()
+q=t.p
+n=A.b([],q)
+if(s.length!==0){m=j.a
+l=j.b
+k=A.b([m.pM("GAME DAY",a,35),A.eP(A.b([m.S5("",a,!1),m.Ez(s,l)],q),B.M,B.a1,B.X),m.xN(l)],q)
+if(p.length!==0)B.b.J(k,A.b([m.G8("Yesterday's Result",a),m.EA(p,l,a),m.xN(l)],q))
+B.b.J(n,k)}else if(r.length!==0){m=j.a
+l=j.b
+B.b.J(n,A.b([m.G8("Latest Gameweek Recap",a),m.EA(r,l,a),m.xN(l)],q))}n.push(B.NR)
+if(o.length!==0){m=j.a
+l=j.b
+B.b.J(n,A.b([m.G8("Upcoming Games",a),m.EA(o,l,a),m.xN(l)],q))}return A.aFG(A.aEP(A.b([A.eP(n,B.M,B.a1,B.X)],q),null),new A.aax(a))}else return B.Td},
 $S:427}
+A.aaw.prototype={
+$1(a){var s=a.r
+s=A.w1(A.iG(s),A.h2(s),A.mb(s)+1,0,0,0,0,!1)
+if(!A.et(s))A.J(A.hK(s))
+return A.a5P(new A.bX(s,!1),new A.bX(Date.now(),!1))},
+$S:38}
 A.aax.prototype={
 $0(){var s=0,r=A.P(t.H),q=this
 var $async$$0=A.Q(function(a,b){if(a===1)return A.M(b,r)
@@ -47872,24 +47881,24 @@ while(true)switch(s){case 0:A.zj(q.a,t.it).D(0,new A.nQ())
 return A.N(null,r)}})
 return A.O($async$$0,r)},
 $S:16}
-A.aaw.prototype={
-$1(a){var s=a.r
-s=A.w1(A.iG(s),A.h2(s),A.mb(s)+1,0,0,0,0,!1)
-if(!A.et(s))A.J(A.hK(s))
-return A.a5P(new A.bX(s,!1),new A.bX(Date.now(),!1))},
-$S:38}
 A.aav.prototype={
 $3(a,b,c){var s=this.a
 return A.dw(null,s,s)},
 $S:158}
 A.aas.prototype={
-$2(a,b){var s,r,q=null,p=this.b[b],o=this.a,n=p.c,m=p.e,l=p.r,k=l.a<Date.now(),j=k&&l.D(0,B.DY).a>Date.now()
-l=A.bD(a,q,t.w).w
-s=n.f
-r=m.f
-r=A.b([s,s,r,r],t.t_)
-s=t.p
-return A.aDb(A.ee(q,A.hz(A.b([o.O5(n.d),o.O6(n.c,B.bi,a),A.MX(A.hz(A.b([A.EU(o.O7(p.d,B.cr,a),!1,!1,!1,k),A.EU(A.dw(o.a9K(j),q,5*(this.c/100)),!1,!1,!1,k),A.EU(o.O7(p.f,B.bi,a),!1,!1,!1,k),A.EU(A.MX(new A.dp(B.E,q,q,new A.bx(B.iM,A.N3(A.eP(A.b([A.d2("VS",q,q,q,q,A.ck(q,q,B.j,q,q,q,q,q,"Staatliches",q,q,33,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q)],s),B.M,B.a1,B.X),B.eY),q),q)),!1,!1,!1,!k)],s),B.M,B.cn,B.X,q)),o.O6(m.c,B.cr,a),o.O5(m.d)],s),B.M,B.cn,B.X,q),q,q,new A.df(q,q,q,q,q,new A.vq(B.bi,B.cr,B.c8,r,B.FX,q),q,B.ar),50,q,q,l.a.a),q)},
+$2(a,b){var s,r,q,p,o,n,m,l,k,j=null,i=this.b[b],h=this.a,g=i.c,f=i.e,e=i.r,d=e.a<Date.now(),c=d&&e.D(0,B.DY).a>Date.now()
+e=A.bD(a,j,t.w).w
+s=g.f
+r=f.f
+q=A.b([s,s,r,r],t.t_)
+p=d&&i.d>=i.f
+p=h.O5(g.d,p)
+o=h.O6(g.c,B.bi,a)
+n=t.p
+m=A.MX(A.hz(A.b([A.EU(h.O7(i.d,B.cr,a),!1,!1,!1,d),A.EU(A.dw(h.a9K(c),j,5*(this.c/100)),!1,!1,!1,d),A.EU(h.O7(i.f,B.bi,a),!1,!1,!1,d),A.EU(A.MX(new A.dp(B.E,j,j,new A.bx(B.iM,A.N3(A.eP(A.b([A.d2("VS",j,j,j,j,A.ck(j,j,B.j,j,j,j,j,j,"Staatliches",j,j,33,j,j,j,j,j,!0,j,j,j,j,j,j,j,j),j,j)],n),B.M,B.a1,B.X),B.eY),j),j)),!1,!1,!1,!d)],n),B.M,B.cn,B.X,j))
+l=h.O6(f.c,B.cr,a)
+k=d&&i.f>=i.d
+return A.aDb(A.ee(j,A.hz(A.b([p,o,m,l,h.O5(f.d,k)],n),B.M,B.cn,B.X,j),j,j,new A.df(j,j,j,j,j,new A.vq(B.bi,B.cr,B.c8,q,B.FX,j),j,B.ar),50,j,j,e.a.a),j)},
 $S:414}
 A.aat.prototype={
 $1(a){return a.r.j(0,this.a[0].r)},
