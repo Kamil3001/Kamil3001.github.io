@@ -7926,7 +7926,7 @@ afb:function afb(a){this.a=a},
 aHK(){var s=0,r=A.J(t.H),q,p,o,n,m,l,k
 var $async$aHK=A.K(function(a,b){if(a===1)return A.G(b,r)
 while(true)switch(s){case 0:s=2
-return A.C(A.asX("",""),$async$aHK)
+return A.C(A.asX("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5tZ3hoZXl2Z3Z5aG5iaWpnaHZ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDAwODA4NTQsImV4cCI6MjAxNTY1Njg1NH0.jNdqG2LoSgawiNDc-AKooBhsSHARGv-BDqFWr-c7Pz0","https://nmgxheyvgvyhnbijghvu.supabase.co"),$async$aHK)
 case 2:if($.Y==null)A.auY()
 q=$.Y
 q.toString
